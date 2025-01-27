@@ -10,7 +10,8 @@ This is a solution to the [Huddle landing page with alternating feature blocks c
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
-- [License](#License)
+- [Credits](#credits)
+- [License](#license)
 
 ## Overview
 
@@ -38,6 +39,9 @@ This is a solution to the [Huddle landing page with alternating feature blocks c
 ## Author
 
 - Frontend Mentor - [@DocForLoop](https://www.frontendmentor.io/profile/DocForLoop)
+
+## Credits
+- Icons provided by Iconmonstr (https://iconmonstr.com)
 
 ## License
 
