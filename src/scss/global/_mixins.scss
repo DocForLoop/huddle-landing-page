@@ -1,1 +1,14 @@
 @use './functions' as *;
+
+@mixin button-primary {
+    background-color: var(--clr-primary-1);
+    color: var(--clr-text-2);
+}
+@mixin button-secondary {
+    background-color: var(--clr-text-2);
+    color: var(--clr-primary-2);
+    padding-inline: fluid(22, 64, 375, 1440, px);
+    padding-block-start: fluid(4, 13, 375, 1440, px);
+    padding-block-end: fluid(6, 16, 375, 1440, px);
+    border-radius: rem(24);
+}
