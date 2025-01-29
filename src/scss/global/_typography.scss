@@ -33,7 +33,7 @@
     --fs-header-button-2: #{fluid(12, 14, 375, 1440, rem)};
     --fs-h2: #{fluid(20, 28, 375, 1440, rem)};
     --fs-main-text: #{fluid(14, 18, 375, 1440, rem)};
-    --fs-floating-section-1: #{fluid(18, 32, 375, 1440, rem)};
+    --fs-floating-section-title: #{fluid(18, 32, 375, 1440, rem)};
     --fs-floating-section-button: #{fluid(10, 20, 375, 1440, rem)};
     --fs-footer-text: #{rem(14)};
     --fs-footer-small: #{rem(12)};
@@ -44,9 +44,9 @@
     --lh-header-text: #{fluid(24, 27, 375, 1440, rem)};
     --lh-h2: #{fluid(30, 42, 375, 1440, rem)};
     --lh-main-text: #{fluid(21, 27, 375, 1440, rem)};
-    --lh-floating-section-1: #{fluid(30, 60, 375, 1440, rem)};
+    --lh-floating-section-title: #{fluid(30, 60, 375, 1440, rem)};
     --lh-floating-section-button: #{fluid(15, 30, 375, 1440, rem)};
-    --lh-footer-text-1: calc(24/14);
-    --lh-footer-text-2: calc(27/14);
+    --lh-footer-address: calc(24/14);
+    --lh-footer-link: calc(27/14);
 }
   

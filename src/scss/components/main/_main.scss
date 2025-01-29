@@ -1,1 +1,100 @@
 @use '@scss/global/functions' as *;
+@use '@scss/global/mixins' as m;
+
+.features {
+    padding-inline: fluid(20, 104, 375, 1440);
+    padding-block-start: fluid(59, 160, 375, 1440);
+    padding-block-end: fluid(229, 344, 375, 1440);
+    text-align: center;
+    position: relative;
+
+    &__section {
+        padding-block-start: 56px;
+        padding-block-end: 33px;
+        box-shadow: 0 0 rem(14) 0 var(--clr-box-shadow);
+        border-radius: rem(16);
+    }
+    
+    &__content {
+        padding-inline: 40px;
+    }
+
+    &__title {
+        font-size: var(--fs-h2);
+        line-height: var(--lh-h2);
+    }
+
+    &__desc {
+        font-size: var(--fs-main-text);
+        line-height: var(--lh-main-text);
+        max-inline-size: 51ch;
+    }
+
+    &__img-1 {
+        inline-size: calc(100% - rem(100));
+        aspect-ratio: 236/194;
+        max-inline-size: rem(406);
+        background-image: url(../assets/images/illustration-grow-together.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__img-2 {
+        inline-size: calc(100% - rem(92));
+        aspect-ratio: 242/172;
+        max-inline-size: rem(418);
+        background-image: url(../assets/images/illustration-flowing-conversation.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__img-3 {
+        inline-size: calc(100% - rem(91));
+        aspect-ratio: 244/185;
+        max-inline-size: rem(420);
+        background-image: url(../assets/images/illustration-your-users.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__section-4 {
+        position: absolute;
+        z-index: 1;
+        background-color: var(--clr-text-2);
+        inline-size: calc(100% - rem(24));
+        min-inline-size: rem(315);
+        min-block-size: rem(176);
+        max-inline-size: rem(800);
+        max-block-size: rem(280);
+        inset-block-end: rem(-68.5);
+        inset-inline-start: 50%;
+        transform: translateX(-50%);
+        padding-block-start: fluid(41, 56, 375, 1440);
+        padding-block-end: fluid(41, 52, 375, 1440);
+        box-shadow: 0 0 rem(14) 0 var(--clr-box-shadow);
+        border-radius: rem(16);
+    }
+
+    &__cta-title {
+        font-size: var(--fs-floating-section-title);
+        line-height: var(--lh-floating-section-title);
+    }
+
+    &__cta-button {
+        @include m.cta-button;
+        box-shadow: 0 rem(3) rem(7) var(--clr-cta-button-shadow);
+        transition: background-color 0.3s, color 0.3s;
+
+        &:hover, &:focus-visible {
+            background-color: var(--clr-hover);
+            color: var(--clr-primary-2);
+        }
+        
+        &:focus-visible {
+            outline: rem(4) solid var(--clr-primary-2);
+        }
+    }
+}

@@ -15,11 +15,13 @@ body {
     font-family: var(--ff-secondary);
     font-weight: var(--fw-1); 
     font-size: var(--fs-footer-text);
+    color: var(--clr-text-1);
 }
 
 h1, h2 {
     font-family: var(--ff-primary);
     font-weight: var(--fw-2);
+    color: var(--clr-primary-2);
 }
 
 p, li, figcaption {
@@ -46,4 +48,8 @@ h1, h2, h3, h4, h5, h6 {
 
 a, a:visited, a:active {
     text-decoration: none;
+}
+
+ul {
+    list-style: none;
 }

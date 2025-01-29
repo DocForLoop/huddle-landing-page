@@ -1,1 +1,122 @@
 @use '@scss/global/functions' as *;
+@use '@scss/global/mixins' as m;
+
+body {
+    min-block-size: 100vh;
+}
+
+.header {
+    background-color: var(--clr-bg);
+    padding-block-start: fluid(27, 68, 375, 1440);
+    padding-block-end: fluid(37, 72, 375, 1440);
+    background-image: url(../assets/images/bg-hero-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    
+    &__skip-link {
+        position: absolute;
+        inset-inline-start: rem(-100);
+        inset-block-start: 0;
+        inline-size: rem(1);
+        block-size: rem(1);
+        overflow: clip;
+
+        &:focus-visible {
+            position: absolute;
+            inset-inline-start: 0;
+            inline-size: fit-content;
+            block-size: fit-content;
+            padding: 1rem;
+            background-color: var(--clr-primary-1);
+            color: var(--clr-text-2);
+            z-index: 100;
+            border-end-end-radius: rem(12);
+            text-decoration: underline;
+            font-weight: var(--fw-3);
+            outline: rem(4) solid var(--clr-primary-2);
+        }
+    }
+
+    &__top {
+        margin-inline: fluid(16, 80, 375, 1440);
+    }
+
+    &__logo-link {
+        flex-shrink: 0;
+
+        &:focus-visible {
+            outline: rem(4) solid var(--clr-primary-2); 
+        }
+    }
+
+    &__logo {
+        inline-size: fluid(104, 200, 375, 1440, rem);
+        block-size: fluid(16, 31, 375, 1440, rem);
+    }
+    
+    &__button-1 {
+        @include m.button-1;
+        flex-shrink: 0;
+        box-shadow: 0 rem(2) rem(7) var(--clr-button-1-shadow);
+        transition: background-color 0.3s;
+        
+        &:hover {
+            background-color: var(--clr-hover);
+        }
+        
+        &:focus-visible {
+            background-color: var(--clr-hover);
+            outline: rem(4) solid var(--clr-primary-2);
+        }
+    }
+
+    &__community {
+        text-align: center;
+    }
+
+    &__content {
+        margin-inline: 35px;
+    }
+
+    &__title {
+        font-size: var(--fs-h1);
+        line-height: var(--lh-h1);
+        max-inline-size: 32ch;
+    }
+
+    &__desc {
+        color: var(--clr-primary-2);
+        font-size: var(--fs-header-text);
+        line-height: var(--lh-header-text);
+        max-inline-size: 50ch;
+        margin-block-end: 8px;
+    }
+    
+    &__button-2 {
+        @include m.button-2;
+        box-shadow: rem(2) rem(3) rem(6) rem(1) var(--clr-primary-1-shadow);
+        transition: background-color 0.3s, color 0.3s;
+
+        &:hover, &:focus-visible {
+            background-color: var(--clr-hover);
+            color: var(--clr-primary-2);
+        }
+
+        &:focus-visible {
+            outline: rem(4) solid var(--clr-primary-2);
+        }
+    }
+
+    &__img {
+        inline-size: calc(100% - rem(79));
+        aspect-ratio: 296/209;
+        background-image: url(../assets/images/illustration-mockups.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        max-inline-size: rem(680); 
+        max-block-size: rem(482);
+        align-self: center;
+    }
+}

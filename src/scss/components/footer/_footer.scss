@@ -1,1 +1,76 @@
 @use '@scss/global/functions' as *;
+@use '@scss/global/mixins' as m;
+
+.footer {
+    background-color: var(--clr-primary-2);
+    color: var(--clr-text-2);
+    padding-inline-start: fluid(16, 120, 375, 1440);
+    padding-inline-end: fluid(21, 78, 375, 1440);
+    padding-block-start: fluid(139, 144, 375, 1440);
+    padding-block-end: fluid(46, 64, 375, 1440);
+
+
+    &__logo {
+        inline-size: rem(167);
+        block-size: rem(26);
+    }
+    &__address {
+        line-height: var(--lh-footer-address);
+        font-style:normal;
+    }
+
+    &__location-icon {
+        margin-block-start: 6.6px;
+        inline-size: rem(12);
+        block-size: rem(18);
+    }
+
+    &__tel-icon {
+        inline-size: rem(18);
+        block-size: rem(18);
+    }
+
+    &__mail-icon {
+        inline-size: rem(20);
+        block-size: rem(16);
+    }
+
+    &__link {
+        color: var(--clr-text-2);
+        line-height: var(--lh-footer-link);
+        border-block-end: rem(1) solid transparent;
+        transition: border-block-end-color 0.3s;
+
+        &:focus-visible {
+            outline: rem(4) solid var(--clr-hover);
+        }
+        
+        &:hover {
+            border-block-end-color: var(--clr-text-2);
+        }
+    }
+
+    &__social {
+        align-self: center;
+    }
+
+    &__social-links {
+        color: var(--clr-text-2);
+        transition: color 0.3s;
+
+        &:hover, &:focus-visible {
+            color: var(--clr-hover);
+            outline: none;
+        }
+    }
+
+    &__social-icons {
+        inline-size: rem(32);
+        block-size: rem(32);
+    }
+
+    &__copyright {
+        font-size: var(--fs-footer-small);
+    }
+
+}
