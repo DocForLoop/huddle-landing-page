@@ -31,8 +31,38 @@
     }
 
     .features {
+        text-align: start;
+        
+        &__content {
+            align-items: start;
+            padding-inline: 0;
+        }
+        &__section {
+            column-gap: 24px;
+        }
+
         &__section-1 {
+            padding-block: 53.8px;
+            padding-inline-start: 120px;
+            padding-inline-end: 32.2px;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+
+        &__section-2 {
+            padding-block: 71px;
+            padding-inline-start: 120px;
+            padding-inline-end: 29px;
             flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &__section-3 {
+            padding-block: 61px;
+            padding-inline-start: 120px;
+            padding-inline-end: 26px;
+            flex-direction: row-reverse;
+            justify-content: space-between;
         }
     }
 }
