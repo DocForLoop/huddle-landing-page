@@ -1,1 +1,46 @@
 @use '@scss/global/functions' as *;
+
+@media (width > em(982)) {
+
+    .header {
+        row-gap: 71px;
+        background-image: url(../assets/images/bg-hero-desktop.svg);
+        
+        &__community {
+            flex-direction: row;
+            column-gap: 54px;
+        }
+
+        &__content {
+            margin-inline: 0;
+        }
+
+        &__community {
+            text-align: start;
+            margin-inline-start: 80px;
+            margin-inline-end: 90px;
+        }
+
+        &__content {
+            align-items: start;
+        }
+
+        &__desc {
+            margin-block-end: 0;
+        }
+    }
+
+    .features {
+        &__section-1 {
+            flex-direction: row;
+        }
+    }
+}
+
+@media (width > em(1440)) {
+
+    .body-wrapper {
+        max-inline-size: 2500px;
+    }
+    
+}
