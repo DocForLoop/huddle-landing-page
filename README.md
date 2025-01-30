@@ -21,8 +21,8 @@ This is a solution to the [Huddle landing page with alternating feature blocks c
 
 ### Links
 
-- [Solution](https://www.frontendmentor.io/solutions/)
-- [Live Site](https://docforloop.github.io/)
+- [Solution](https://www.frontendmentor.io/solutions/huddle-landing-page-with-flexbox-and-grid-yXFi-lPCKG)
+- [Live Site](https://huddle-landing-page-pied-one.vercel.app/)
 
 ## My process
 
