@@ -158,7 +158,7 @@
 
 }
 
-@media (width > em(1441)) {
+@media (width > em(1451)) {
     
     .body-wrapper {
         margin: auto;
@@ -167,7 +167,7 @@
 
     .header {
         &__img {
-            max-inline-size: 60%;
+            max-inline-size: 53%;
             max-block-size: unset;
         }
     }
