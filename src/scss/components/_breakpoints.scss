@@ -1,6 +1,52 @@
 @use '@scss/global/functions' as *;
 
-@media (width > em(982)) {
+@container (width > #{em(628)}) {
+    .footer {
+
+        &__content-wrapper {
+            flex-direction: row;
+            flex-wrap: wrap;
+            column-gap: 16px;
+            row-gap: 50px;
+        }
+
+        &__info {
+            margin-block-end: 0;
+        }
+
+        &__address {
+            row-gap: 16px;
+        }
+        
+        &__nav {
+            margin: auto;
+        }
+
+        &__link-list {
+            row-gap: 10px;
+        }
+
+        &__social {
+            margin: auto;
+        }
+    }
+}
+
+@container (width > #{em(727)}) {
+    .footer {
+        
+        &__link-list {
+            grid-auto-columns: 1fr;
+            grid-template-areas: 
+                "l-1 l-4"
+                "l-2 l-5"
+                "l-3 l-6";    
+            column-gap: fluid(50, 143, 727, 1440);
+        }
+    }
+}
+
+@media (width > em(1042)) {
 
     .header {
         row-gap: 71px;
@@ -37,8 +83,9 @@
             align-items: start;
             padding-inline: 0;
         }
+
         &__section {
-            column-gap: 24px;
+            column-gap: 32px;
         }
 
         &__section-1 {
@@ -65,12 +112,84 @@
             justify-content: space-between;
         }
     }
+
+    
 }
 
-@media (width > em(1440)) {
+@media (width > em(1270)) {
 
-    .body-wrapper {
-        max-inline-size: 2500px;
+    .footer {
+
+        &__content-wrapper {
+            flex-wrap: nowrap;
+            column-gap: fluid(24, 130, 1050, 1440);
+        }
+
+        &__info {
+            margin-block-end: 0;
+        }
+
+        &__address {
+            row-gap: 16px;
+        }
+
+        &__nav{
+            margin: 0;
+            align-self: center;
+        }
+
+        &__social{
+            margin: 0;
+            margin-inline-start: fluid(0, 25, 1280, 1440);
+            align-items: flex-start;
+            align-self: stretch;
+            justify-content: space-between;
+        }
+
+        &__social-nav {
+            margin-block-start: 60px;
+
+        }
+
+        &__copyright {
+            margin-block-end: 6px;
+        }
     }
+
+}
+
+@media (width > em(1441)) {
     
+    .body-wrapper {
+        margin: auto;
+        max-inline-size: rem(2150);
+    }
+
+    .header {
+        &__img {
+            max-inline-size: 60%;
+            max-block-size: unset;
+        }
+    }
+
+    .features {
+        &__img-1 {
+            max-inline-size: 40%;
+        }
+
+        &__img-2 {
+            max-inline-size: 40%;
+            
+        }
+
+        &__img-3 {
+            max-inline-size: 40%;
+        }
+    }
+
+    .footer {
+        &__content-wrapper {
+            justify-content: space-between;
+        }
+    }
 }

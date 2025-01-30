@@ -11,7 +11,14 @@
     "build": "vite build",
     "preview": "vite preview"
   },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
   "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.1",
     "sass": "^1.83.4",
     "vite": "^6.0.5"
   }

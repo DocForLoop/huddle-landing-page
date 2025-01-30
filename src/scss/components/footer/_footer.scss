@@ -5,15 +5,18 @@
     background-color: var(--clr-primary-2);
     color: var(--clr-text-2);
     padding-inline-start: fluid(16, 120, 375, 1440);
-    padding-inline-end: fluid(21, 78, 375, 1440);
+    padding-inline-end: 21px;
     padding-block-start: fluid(139, 144, 375, 1440);
     padding-block-end: fluid(46, 64, 375, 1440);
+    container-type: inline-size;
+
 
 
     &__logo {
         inline-size: rem(167);
         block-size: rem(26);
     }
+
     &__address {
         line-height: var(--lh-footer-address);
         font-style:normal;
@@ -24,6 +27,14 @@
         inline-size: rem(12);
         block-size: rem(18);
     }
+    
+    &__location-text {
+        max-inline-size: 45ch;
+    }
+
+    &__address-items {
+        flex-shrink: 0;
+    }
 
     &__tel-icon {
         inline-size: rem(18);
@@ -33,6 +44,25 @@
     &__mail-icon {
         inline-size: rem(20);
         block-size: rem(16);
+    }
+
+    &__link-1 {
+        grid-area: l-1;
+    }
+    &__link-2 {
+        grid-area: l-2;
+    }
+    &__link-3 {
+        grid-area: l-3;
+    }
+    &__link-4 {
+        grid-area: l-4;
+    }
+    &__link-5 {
+        grid-area: l-5;
+    }
+    &__link-6 {
+        grid-area: l-6;
     }
 
     &__link {
@@ -72,5 +102,4 @@
     &__copyright {
         font-size: var(--fs-footer-small);
     }
-
 }
