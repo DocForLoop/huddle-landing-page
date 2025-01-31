@@ -61,6 +61,10 @@
             margin-inline: 0;
         }
 
+        &__title {
+            padding-block-start: 86px;
+        }
+        
         &__community {
             text-align: start;
             margin-inline-start: 80px;
@@ -158,10 +162,16 @@
 
 }
 
-@media (width > em(1451)) {
+@media (width > em(1441)) {
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     
     .body-wrapper {
-        margin: auto;
+        inline-size: 100%;
         max-inline-size: rem(2150);
     }
 

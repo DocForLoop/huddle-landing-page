@@ -5,7 +5,7 @@
     background-color: var(--clr-primary-2);
     color: var(--clr-text-2);
     padding-inline-start: fluid(16, 120, 375, 1440);
-    padding-inline-end: 21px;
+    padding-inline-end: fluid(21, 60, 375, 1440);
     padding-block-start: fluid(139, 144, 375, 1440);
     padding-block-end: fluid(46, 64, 375, 1440);
     container-type: inline-size;
